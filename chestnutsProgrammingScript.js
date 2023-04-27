@@ -37,3 +37,23 @@ function menuClick(){
     x.className = "men";
     y.className = "topnav";
 }
+
+
+function sendEmail() {
+    console.log("staritng");
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "jacobchestnut@chestnutsprogramming.dev",
+        Password: "Spicyleaf82",
+        To: 'e16.jmc@gmail.com',
+        From: "e16.jmc@gmail.com",
+        Subject: "Monteverde Catering " + document.getElementById("name"),
+        Body: document.getElementById("email")+"\n"+document.getElementById("message"),
+    })
+        .then(function (message) {
+            alert("mail sent successfully")
+            console.log("sent");
+        });
+    console.log("completed");
+
+}
