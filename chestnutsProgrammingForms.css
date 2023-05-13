@@ -7,6 +7,11 @@ button{
     resize: none;
     border-radius: 10px;
 }
+div *{
+    width: 45%;
+    resize: none;
+    border-radius: 10px;
+}
 label{
     font-size: 1.25em;
 }
